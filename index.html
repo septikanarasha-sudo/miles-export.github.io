@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miles Export</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 20px 0 10px;
+    }
+
+    .pdf-container {
+      width: 90%;
+      max-width: 900px;
+      height: 80vh;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Floating Buttons */
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 999;
+    }
+
+    .float-btn {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .float-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .video {
+      background: #ff3b3b;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Miles Export</h1>
+
+  <div class="pdf-container">
+    <iframe 
+      src="https://drive.google.com/file/d/1maRR1K1FY65uB4TlOGiva9Zw9XdOjzNY/preview"
+      allow="autoplay">
+    </iframe>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-buttons">
+    <!-- WhatsApp -->
+    <a href="http://wa.me/6282148014159?text=Hello%2C%20I%20would%20like%20to%20request%20more%20information%20about%20your%20product.%20Thank%20you"
+       class="float-btn whatsapp"
+       target="_blank"
+       title="Chat via WhatsApp">
+       <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Video -->
+    <a href="https://drive.google.com/file/d/1ccFfz1bNM2-j7L9iZNUNnmzmwp40fasT/view?usp=sharing"
+       class="float-btn video"
+       target="_blank"
+       title="Tonton Video">
+       <i class="fas fa-play"></i>
+    </a>
+  </div>
+
+</body>
+</html>
